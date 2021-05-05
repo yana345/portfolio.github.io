@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+/*共通パーツ*/
+a {
+ text-decoration: none;
+ list-style: none;
+ 
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+.inner {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    font-family: "Hiragino Mincho Pro",serif;
+  }
+  
+  .section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60px;
+    height: 1px;
+    background: #3ea1d1;
+  }
+
+
+/*header*/
+.header {
+ background: url("./img/MIZUHO319002_TP_V.jpg") no-repeat center center/cover;
+ height: 1070px;
+ width: auto;
+}
+
+.header-logo {
+  width: 150px;
+  height: auto;
+  text-align: left;
+  margin-left: 100px;
+  padding-top: 47px;
+}
+
+.header-nav ul {
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  }
+
+  .header-nav-item a {
+   color: #d70ff1e5;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .header-nav ul  li{
+    display: inline-block; /* メニューを横並びにする */
+    line-height: 100%;
+    padding-left: 60px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .header-nav-items {
+    margin: 0;
+    margin-top: 20px;
+    
+  }
+
+.header-box {
+  width: 700px;
+  height: 300px;
+  opacity: 0.9;
+  margin-left: 60px;
+  line-height: 2;
+}
+
+.header-text {
+  padding: 51px 24px 44px 24px;
+  font-size: 20px;
+  margin-left: 131px;
+  margin-top: 150px;
+}
+
+
+  /*top*/
+
+  .top-img {
+  width: 100%;
+  }
+
+/*about*/
+.about {
+ padding: 60px 0;
+}
+
+
+
+/*warks*/
+.warks {
+  max-width: 940px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.warks-list {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.warks-list:first-child {
+  padding: 0;
+}
+
+.warks-item {
+  flex: 0 0 27.6%;
+}
+
+.warks-item-link {
+  display: block;
+  color: #333333;
+  font-size: 14px;
+}
+
+.warks-item-body {
+  margin-top: 22px;
+}
+
+.warks-item-cost {
+  color: #989898;
+  margin-top: 10px;
+  margin-bottom: 48px;
+}
+
+/*二分割*/
+.layout_2_div {
+
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+}
+
+.layout_2_div > div {
+  width: 50%;
+}
+
+.text_home {
+ font-size: 20px;
+ 
+ 
+}
+
+.layout_2_div img {
+ padding-left: 192px;
+ 
+}
+
+.about {
+  padding: 100px 0;
+  background: lemonchiffon;
+}
+
+.text_home {
+font-size: 25px;
+
+
+}
+
+.footer {
+  height: 100px;
+  margin-top: 40px;
+  text-align: right;
+
+}
+
+.contact-email {
+  display: inline-block;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.conatct-box {
+
+}
+
+.contact-email {
+  display: inline-block;
+  
+}
+
+.footer {
+  background-color: #F7F7F7;
+  padding: 42px 40px 12px;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-nav-list {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-item + .footer-nav-item {
+  margin-left: 30px;
+}
+
+.footer-nav-item-link {
+  font-size: 12px;
+  color: #333333;
+  display: block;
+  padding: 1em 0;
+}
+
+.footer-sns-list {
+  text-align: center;
+  margin-left: -42px;
+}
+
+.footer-sns-item {
+  display: inline-block;
+}
+
+.footer-sns-item + .footer-sns-item {
+  margin-left: 10px;
+}
+
+.footer-sns-item-link {
+  color: #3EA1D1;
+  font-size: 24px;
+  display: block;
+  padding: .1em .5em;
+}
+
+.footer-copyright {
+  color: #3EA1D1;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/*スマホ*/
+
+@media screen and (max-width: 767px)  {
+  .header-logo img {
+  width: 200px;
+  }
+
+  .header-logo {
+    margin-left: 86px;
+  }
+  .header-nav ul  {
+    margin-left: -23px;
+  }
+
+  .header {
+    height: 500px;
+  }
+
+  .header-text {
+    font-size: 12px;
+    width: 190px;
+    height: auto;
+    margin: 14px;
+  }
+
+  .warks-item {
+    margin-left: 42px;
+    
+  }
+
+  .warks-list {
+    display: block;
+  }
+
+  .about {
+    padding: 49px 0;
+  }
+
+  .layout_2_div img {
+    padding: 0 82px;
+    width: 200px;
+  }
+
+  .text_home {
+    font-size: 14px;
+    padding: 0 62px;
+}
