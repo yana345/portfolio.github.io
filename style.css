@@ -40,6 +40,11 @@ li {
     background: #3ea1d1;
   }
 
+  body {
+    box-sizing : border-box;
+  }
+
+ 
 
 /*header*/
 .header {
@@ -237,7 +242,7 @@ font-size: 25px;
 
 .footer-sns-list {
   text-align: center;
-  margin-left: -42px;
+  /*margin-left: -42px;*/
 }
 
 .footer-sns-item {
@@ -252,21 +257,21 @@ font-size: 25px;
   color: #3EA1D1;
   font-size: 24px;
   display: block;
-  padding: .1em .5em;
+  /*padding: .1em .5em;*/
 }
 
 .footer-copyright {
   color: #3EA1D1;
   font-size: 12px;
   text-align: center;
-  margin-top: 12px;
+  /*margin-top: 12px;*/
 }
 
 /*スマホ*/
 
 @media screen and (max-width: 767px)  {
   .header-logo img {
-  width: 200px;
+  width: 215px;
   }
 
   .header-logo {
@@ -274,6 +279,7 @@ font-size: 25px;
   }
   .header-nav ul  {
     margin-left: -23px;
+    display: block;
   }
 
   .header {
@@ -285,6 +291,14 @@ font-size: 25px;
     width: 190px;
     height: auto;
     margin: 14px;
+  }
+
+  .header-box {
+    width: 190px;
+  }
+
+  .header-nav ul  li {
+    font-size: 30px;
   }
 
   .warks-item {
@@ -300,12 +314,16 @@ font-size: 25px;
     padding: 49px 0;
   }
 
+  .layout_2_div {
+    display: block;
+  }
+
   .layout_2_div img {
-    padding: 0 82px;
+      padding-left: 76px;
     width: 200px;
   }
 
   .text_home {
     font-size: 14px;
-    padding: 0 62px;
+    margin: 0 auto;
 }
