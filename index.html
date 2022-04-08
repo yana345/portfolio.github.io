@@ -10,18 +10,25 @@
  
 </head>
 <body>
-  <header>
-    <div class="header container">
-      <div class="header-left">
-        <h1 class="header-title"><a href="#">Rainbow</a></h1>
-      </div>
-      <div class="header-right">
-        <ul class="header-right-items">
-          <li class="header-right-item">自己紹介<a href="#"></a></li>
-          <li class="header-right-item">できること<a href="#"></a></li>
-          <li class="header-right-item">制作物<a href="#"></a></li>
-          <li class="header-right-item">お問い合わせ<a href="#"></a></li>
-        </ul>
+  <header class="header">
+    <!-- ヘッダーロゴ -->
+    <div class="inner header-inner">
+      <div class="logo">Rainbow</div>
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="#about">わたしについて</a></li>
+            <li class="nav_item"><a href="#service">できること</a></li>
+            <li class="nav_item"><a href="#work">制作例</a></li>
+            <li class="nav_item"><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -33,7 +40,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="inner">
      <h2 class="section-title">わたしについて</h2>
      <div class="about-box">
@@ -56,7 +63,7 @@
     </div>
   </section>
 
-  <section class="service">
+  <section id="service" class="service">
     <div class="inner">
      <h2 class="section-title">できること</h2>
      <div class="service-items">
@@ -79,7 +86,7 @@
     </div>
   </section>
 
-  <section class="work">
+  <section id="work" class="work">
     <div class="inner">
      <h2 class="section-title">制作例</h2>
      <div class="work-items">
@@ -91,7 +98,7 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="inner-inner">
      <h2 class="section-title">お問い合わせ</h2>
      <p class="section-title-text">メール・Twitterよりお気軽にご相談くださいませ。</p>
