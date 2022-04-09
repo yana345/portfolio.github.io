@@ -28,7 +28,7 @@ li {
 }
 .section-title {
  text-align: center;
- font-size: 3vw;
+ font-size: 2vw;
  padding: 20px 0;
 }
 .section-title:hover {
@@ -84,14 +84,14 @@ font-weight: bold;
   text-align: center;
 }
 .top-title {
-font-size: 9vw;
+font-size: 5vw;
 font-weight: bold;
 }
 .top-title:hover {
   color: yellow;
   }
 .top-text {
-  font-size: 3vw;
+  font-size: 2vw;
   color: blue;
 }
 .top-text:hover {
