@@ -315,6 +315,9 @@ font-weight: bold;
   .top {
     width: 100%;
   }
+  .top-title {
+font-size: 8vw;
+  }
   .section-title {
     font-size: 5vw;
    }
