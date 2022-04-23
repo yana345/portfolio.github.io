@@ -10,28 +10,25 @@
  
 </head>
 <body>
-  <header class="header">
-    <!-- ヘッダーロゴ -->
-    <div class="inner header-inner">
-      <div class="logo">Rainbow</div>
-      <!-- ハンバーガーメニュー部分 -->
-      <div class="nav">
-        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-        <input id="drawer_input" class="drawer_hidden" type="checkbox">
-        <!-- ハンバーガーアイコン -->
-        <label for="drawer_input" class="drawer_open"><span></span></label>
-        <!-- メニュー -->
-        <nav class="nav_content">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="#about">わたしについて</a></li>
-            <li class="nav_item"><a href="#service">できること</a></li>
-            <li class="nav_item"><a href="#work">制作例</a></li>
-            <li class="nav_item"><a href="#contact">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+  <header>
+		<h1 class="logo"><a href="https://webgodweb.com/ex/responsive/">rainbow</a></h1>
+	
+		<div id="drawer_toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<nav id="global_nav">
+			<ul>
+				<li><a href="#about">わたしについて</a></li>
+				<li><a href="#service">できること</a></li>
+				<li><a href="#work">制作例</a></li>
+				<li><a href="#contact">お問い合わせ</a></li>
+			</ul>
+		</nav>
+		
+	</header><!-- /.header -->
 
   <section class="top">
     <div class="container">
@@ -115,19 +112,31 @@
      </div>
     </div>
   </section>
-  <script src="./script.js"></script>
-  <script>
-    //画像のモーダル
-$(".gallery").modaal({
-  type: 'image',
-  overlay_close:true,//モーダル背景クリック時に閉じるか
-  before_open:function(){// モーダルが開く前に行う動作
-    $('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
-  },
-  after_close:function(){// モーダルが閉じた後に行う動作
-    $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
-  }
-});
-  </script>
+  <footer class="footer">
+    <p class="footer-text">&copy;YANA.Portfolio</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+		$(function(){
+			 //1. 上からスライド
+			 //$("#drawer_toggle").click(function(){
+			 //	$(this).toggleClass("open");
+			 //	$("#global_nav").slideToggle();
+			 //});
+			
+			// 2. フェードイン
+			// $("#drawer_toggle").click(function(){
+			// 	$(this).toggleClass("open");
+			// 	$("#global_nav").fadeToggle();
+			// });
+
+			//3. 横からスライド
+			$("#drawer_toggle").click(function(){
+				$(this).toggleClass("open");
+				$("#global_nav").toggleClass("sp_open");
+				});
+		});
+	</script>
+
 </body>
 </html>
